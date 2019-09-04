@@ -26,8 +26,8 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  String _output;
   String _inputExpression;
+  String _output;
 
   TextEditingController _controller;
   Parser _parser;
@@ -52,6 +52,7 @@ class _MyHomePageState extends State<MyHomePage> {
             TextField(
               autofocus: true,
               controller: _controller,
+              decoration: new InputDecoration(hintText: 'Enter Expression'),
             ),
             SizedBox(
               height: 8,
